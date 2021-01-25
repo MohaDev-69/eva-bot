@@ -4,6 +4,10 @@ const alexa = require("alexa-bot-api")
 const db = require("quick.db")
 const { MessageEmbed } = require("discord.js")
 const prefix = "!";
+
+client.on("ready", () => {
+console.log(`${prefix}help | www.evabot.ga`);
+});
 client.on('message', message => {
   if(message.content.startsWith(prefix + "set")) { 
   if(message.author.bot)return;
