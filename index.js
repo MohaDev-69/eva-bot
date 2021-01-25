@@ -6,8 +6,9 @@ const { MessageEmbed } = require("discord.js")
 const prefix = "!";
 
 client.on("ready", () => {
-console.log(`${prefix}help | www.evabot.ga`);
-});
+client.user.setActivity(`${prefix}help | www.evabot.ga` , {
+   type: "PLAYING",);
+}});
 client.on('message', message => {
   if(message.content.startsWith(prefix + "set")) { 
   if(message.author.bot)return;
