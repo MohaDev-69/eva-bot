@@ -7,8 +7,9 @@ const prefix = "!";
 
 client.on("ready", () => {
 client.user.setActivity(`${prefix}help | www.evabot.ga` , {
-   type: "PLAYING",);
-}});
+   type: "PLAYING",
+})});
+
 client.on('message', message => {
   if(message.content.startsWith(prefix + "set")) { 
   if(message.author.bot)return;
