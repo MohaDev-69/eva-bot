@@ -6,7 +6,7 @@ const { MessageEmbed } = require("discord.js")
 const prefix = "!";
 
 client.on("ready", () => {
-client.user.setActivity(`${prefix}help | www.evabot.ga` , {
+client.user.setActivity(`${prefix}help ` , {
    type: "PLAYING",
 })});
 
@@ -36,12 +36,11 @@ chatbot.getReply(content).then(r => message.channel.send(`>>> <@${message.author
 client.on('message', message => {
 if(message.content.startsWith(prefix + "help")) {
   let embed = new Discord.MessageEmbed()
-.setDescription(`[EvaBot |  إيفُآ بوت](https://evabot.ga/)`)
-.addField("**support serve :**","**[support](https://discord.gg/JwKatybjhJ)**", true)
-.addField("**invite bot :**","**[invite](https://discord.com/oauth2/authorize?client_id=765625130675732551&permissions=8&scope=bot)**", true)
+.setDescription(`[بوت](https://google.com/)`)
+.addField("**support serve :**","**[support](https://discord.gg/)**", true)
+.addField("**invite bot :**","**[invite](https://discord.com/oauth2/authorize?client_id=botid&permissions=8&scope=bot)**", true)
 .addField("**commands :**","**[commands](http://evabot.ga/commands)**",true)
-.setImage("https://cdn.discordapp.com/attachments/776454054540083251/801074941855531028/pngaaa_1_3.png")
-message.channel.send("** Bot site ** http://evabot.ga/")
+.setImage("your bot image")
 message.channel.send(embed)
 }})
 client.login("token")
