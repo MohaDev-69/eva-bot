@@ -39,7 +39,7 @@ if(message.content.startsWith(prefix + "help")) {
 .setDescription(`[بوت](https://google.com/)`)
 .addField("**support serve :**","**[support](https://discord.gg/)**", true)
 .addField("**invite bot :**","**[invite](https://discord.com/oauth2/authorize?client_id=botid&permissions=8&scope=bot)**", true)
-.addField("**commands :**","**[commands](http://evabot.ga/commands)**",true)
+.addField("**commands :**","**[commands](https://google.com)**",true)
 .setImage("your bot image")
 message.channel.send(embed)
 }})
